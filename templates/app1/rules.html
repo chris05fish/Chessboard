@@ -1,0 +1,22 @@
+<html>
+  <head>
+    {% include "bootstrap.html" %}
+    {% load static %}
+    <script src="{%static 'chessboard.js' %}" /></script>
+    <link rel="stylesheet" href="{%static 'chessboard.css' %}"/>
+  </head>
+  <body>
+    {% include "navigation.html" %}
+    <h1>CINS 465: Assignment 4 by Chris Fisher</h1>
+    <p>
+    </p>
+    <ul>
+      <li>King: can only move one space, up, down or sideways</li>
+      <li>Queen: can move diagonally, up and down, and side to side</li>
+      <li>Bishop: can only move diagonally</li>
+      <li>Knight: can move ether two spaces up/down and one over, or two spaces over and one up/down</li>
+      <li>Castle: can ether go up or down</li>
+      <li>Pawn: can only move forward one space but attacks one diagonally, if it is the first pawn move then you can move two spaces up
+    </ul>
+  </body>
+</html>

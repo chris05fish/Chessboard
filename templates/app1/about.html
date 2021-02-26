@@ -1,0 +1,25 @@
+<html>
+  <head>
+    {% include "bootstrap.html" %}
+    {% load static %}
+    <script src="{%static 'chessboard.js' %}" /></script>
+    <link rel="stylesheet" href="{%static 'chessboard.css' %}"/>
+  </head>
+  <body>
+    {% include "navigation.html" %}
+    <h1>CINS 465: Assignment 4 by Chris Fisher</h1>
+    <img src="{%static 'image' height='500' width='600' %}" />
+    <p>
+      I am a Computer Science major with a minor in Mathematics at California State University Chico. I am also a member of the fraternity Delta Chi.
+      I play for the Chico State Hockey team as well. I enjoy playing golf and other sports. My favorite activity to do outside is play Beer Dye.
+    </p>
+    <ol>
+      <li>The first step I took was to watch the video that the instructor posted on Black Board</li>
+      <li>Next I followed the steps very closley and used the sudoku board as an example to help me render my chessboard</li>
+      <li>Next I looked at the source code given on the sudoku page link:<a href="http://www.ecst.csuchico.edu/~bherring/csci465/spring2020/Lecture/HTML-CSS/sudoku/sudoku_7.html.sav">Sudoku-Board-Example</a></li>
+      <li>Then I played with my code to see where each space of the chess board was represented similar to the sudoku example</li>
+      <li>I then began to put the chess pieces in the right spots of the chess board by using static django</li>
+      <li>Then I put together the navigation header and the info on each page</li>
+      <li>Finally I uploaded the above image and made this about page</li>
+  </body>
+</html>

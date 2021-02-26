@@ -1,0 +1,50 @@
+<html>
+<head>
+  {% include "bootstrap.html" %}
+  {% load static %}
+  <script src="{%static 'chessboard.js' %}" /></script>
+  <link rel="stylesheet" href="{%static 'chessboard.css' %}"/>
+</head>
+<body>
+  {% include "navigation.html" %}
+  <div>
+    <h1>CINS 465: Assignment 4 by Chris Fisher</h1>
+  </div>
+  <table>
+    {% for row in rows %}
+    <tr>
+      {% for name,value in row.items %}
+      {% if forloop.first %}
+      <th>
+        {{value}}
+      </th>
+      {% else %}
+      {% autoescape off %}
+      <td id="{{name}}">
+        {{value}}
+      </td>
+      {% endautoescape %}
+      {% endif %}
+      {% endfor %}
+    </tr>
+    {% endfor %}
+    <tr>
+      <th></th><th>a</th><th>b</th><th>c</th><th>d</th><th>e</th><th>f</th><th>g</th><th>h</th>
+    </tr>
+  </table>
+  <p>
+  </p>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <input type="text" class="form-group col-md-6" id="src" placeholder="e2">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-group col-md-6" id="dst" placeholder="e4">
+      </div>
+    </form>
+    <button type="button" class="btn btn-outline-primary" onclick="move();">Move</button>
+    <button type="button" class="btn btn-outline-warning" onclick="reset();">Reset</button>
+  </div>
+<body/>
+</html>
