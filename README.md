@@ -5,4 +5,5 @@ run command: python3 manage.py runserver
 
 Dependensies (Python and Django): 
 pip install django
+
 brew install python3
